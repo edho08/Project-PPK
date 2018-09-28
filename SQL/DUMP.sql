@@ -1,0 +1,1 @@
+CREATE DATABASE istana_bangunan;

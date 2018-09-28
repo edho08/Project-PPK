@@ -9,7 +9,7 @@ namespace Project_PPK
 {
     class DbInterface
     {
-        public static string db_name = "anonpost";
+        public static string db_name = "istana_bangunan";
         public static string connInfo = "datasource=localhost; port=3306; username=root; password=root; database="+db_name+"; SslMode=none";
         private static MySqlConnection conn = new MySqlConnection(connInfo);
 

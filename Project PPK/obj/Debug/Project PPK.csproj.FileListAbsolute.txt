@@ -12,3 +12,4 @@ C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csproj.
 C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csproj.CopyComplete
 C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.exe
 C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.pdb
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project_PPK.CRUDGeneral.resources

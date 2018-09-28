@@ -10,6 +10,7 @@ namespace Project_PPK
     static class Manager
     {
         static bool isAllowedLogin = false;
+        static bool use = true;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,7 +19,12 @@ namespace Project_PPK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            do
+            {
+                Application.Run(new Login());
+                if (isAllowedLogin)
+                    Application.Run(new CRUDGeneral());
+            } while (use);
         }
 
         public static bool attemp_login(string uname, string pass) {

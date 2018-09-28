@@ -1,0 +1,14 @@
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\Project PPK.exe.config
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\Project PPK.exe
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\Project PPK.pdb
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\MySql.Data.dll
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\Google.Protobuf.dll
+C:\Users\Edho\source\repos\Project PPK\Project PPK\bin\Debug\MySql.Data.xml
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csprojAssemblyReference.cache
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project_PPK.Login.resources
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project_PPK.Properties.Resources.resources
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csproj.GenerateResource.cache
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csproj.CoreCompileInputs.cache
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.csproj.CopyComplete
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.exe
+C:\Users\Edho\source\repos\Project PPK\Project PPK\obj\Debug\Project PPK.pdb

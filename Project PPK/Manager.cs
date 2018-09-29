@@ -11,6 +11,7 @@ namespace Project_PPK
     {
         static bool isAllowedLogin = false;
         static bool use = true;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,8 +22,8 @@ namespace Project_PPK
             Application.SetCompatibleTextRenderingDefault(false);
             do
             {
-                Application.Run(new Login());
-                if (isAllowedLogin)
+               // Application.Run(new Login());
+              //  if (isAllowedLogin)
                     Application.Run(new CRUDGeneral());
             } while (use);
         }
@@ -43,5 +44,13 @@ namespace Project_PPK
             DbInterface.close();
             return isAllowedLogin;
         }
+        public static void log_out() {
+            use = true;
+            isAllowedLogin = false;
+        }
+        public static void close() {
+            use = false;
+        }
+
     }
 }

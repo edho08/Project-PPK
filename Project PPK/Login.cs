@@ -22,6 +22,7 @@ namespace Project_PPK
         }
 
         private void close(object sender, EventArgs arg) {
+            Manager.close();
             Close();
         }
         private void check_login(object sender, EventArgs arg) {

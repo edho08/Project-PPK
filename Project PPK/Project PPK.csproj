@@ -53,6 +53,12 @@
     <Compile Include="CRUDGeneral.Designer.cs">
       <DependentUpon>CRUDGeneral.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataView.Designer.cs">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbInterface.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -62,8 +68,15 @@
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryBuilder.cs" />
+    <Compile Include="QueryData.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="CRUDGeneral.resx">
       <DependentUpon>CRUDGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

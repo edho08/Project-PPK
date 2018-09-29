@@ -14,11 +14,16 @@ namespace Project_PPK
     {
 
         public Dictionary<TabPage, string> tab_table = new Dictionary<TabPage, string>();
+        DataView view;
         public CRUDGeneral()
         {
-            InitializeComponent();
             tab_table.Add(tabToko, "toko");
             tab_table.Add(tabKaryawan, "karyawan");
+            this.IsMdiContainer = true;
+            InitializeComponent();
+            view = new DataView();
+            view.MdiParent = this.
+view.
         }
 
     }

@@ -44,6 +44,43 @@
             this.tb_karyawan_lama = new System.Windows.Forms.TextBox();
             this.tb_karyawan_tempat = new System.Windows.Forms.TextBox();
             this.tabToko = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tb_toko_id = new System.Windows.Forms.TextBox();
+            this.tb_toko_nama = new System.Windows.Forms.TextBox();
+            this.tabDistributor = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tb_dist_id = new System.Windows.Forms.TextBox();
+            this.tb_dist_nama = new System.Windows.Forms.TextBox();
+            this.tabBarang = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.tb_barang_id = new System.Windows.Forms.TextBox();
+            this.tb_barang_nama = new System.Windows.Forms.TextBox();
+            this.tb_barang_merk = new System.Windows.Forms.TextBox();
+            this.tb_barang_harga = new System.Windows.Forms.TextBox();
+            this.tb_barang_jumlah = new System.Windows.Forms.TextBox();
+            this.tb_barang_rak = new System.Windows.Forms.TextBox();
+            this.tabBarangDistributor = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tb_brgdist_id_dist = new System.Windows.Forms.TextBox();
+            this.tb_brgdist_id_brg = new System.Windows.Forms.TextBox();
+            this.tabTokoMenjual = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tb_tkmjl_id_toko = new System.Windows.Forms.TextBox();
+            this.tb_tkmjl_id_barang = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnReset = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -55,14 +92,26 @@
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabKaryawan.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tabToko.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tabDistributor.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tabBarang.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tabBarangDistributor.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tabTokoMenjual.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -73,6 +122,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabKaryawan);
             this.tabControl1.Controls.Add(this.tabToko);
+            this.tabControl1.Controls.Add(this.tabDistributor);
+            this.tabControl1.Controls.Add(this.tabBarang);
+            this.tabControl1.Controls.Add(this.tabBarangDistributor);
+            this.tabControl1.Controls.Add(this.tabTokoMenjual);
             this.tabControl1.Location = new System.Drawing.Point(4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -83,7 +136,7 @@
             // tabKaryawan
             // 
             this.tabKaryawan.Controls.Add(this.tableLayoutPanel2);
-            this.tabKaryawan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tabKaryawan.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabKaryawan.Location = new System.Drawing.Point(4, 22);
             this.tabKaryawan.Name = "tabKaryawan";
             this.tabKaryawan.Padding = new System.Windows.Forms.Padding(3);
@@ -232,6 +285,7 @@
             // 
             // tabToko
             // 
+            this.tabToko.Controls.Add(this.tableLayoutPanel3);
             this.tabToko.Location = new System.Drawing.Point(4, 22);
             this.tabToko.Name = "tabToko";
             this.tabToko.Padding = new System.Windows.Forms.Padding(3);
@@ -239,6 +293,418 @@
             this.tabToko.TabIndex = 1;
             this.tabToko.Text = "Toko";
             this.tabToko.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.195489F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53384F));
+            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.tb_toko_id, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tb_toko_nama, 2, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 6;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(532, 218);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(128, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "ID Toko";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(111, 47);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Nama Toko";
+            // 
+            // tb_toko_id
+            // 
+            this.tb_toko_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_toko_id.Location = new System.Drawing.Point(196, 8);
+            this.tb_toko_id.Name = "tb_toko_id";
+            this.tb_toko_id.Size = new System.Drawing.Size(333, 20);
+            this.tb_toko_id.TabIndex = 7;
+            // 
+            // tb_toko_nama
+            // 
+            this.tb_toko_nama.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_toko_nama.Location = new System.Drawing.Point(196, 44);
+            this.tb_toko_nama.Name = "tb_toko_nama";
+            this.tb_toko_nama.Size = new System.Drawing.Size(333, 20);
+            this.tb_toko_nama.TabIndex = 8;
+            // 
+            // tabDistributor
+            // 
+            this.tabDistributor.Controls.Add(this.tableLayoutPanel4);
+            this.tabDistributor.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabDistributor.Location = new System.Drawing.Point(4, 22);
+            this.tabDistributor.Name = "tabDistributor";
+            this.tabDistributor.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDistributor.Size = new System.Drawing.Size(544, 468);
+            this.tabDistributor.TabIndex = 2;
+            this.tabDistributor.Text = "Distributor";
+            this.tabDistributor.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.195489F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53384F));
+            this.tableLayoutPanel4.Controls.Add(this.label15, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.tb_dist_id, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.tb_dist_nama, 2, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(9, 6);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 6;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(532, 218);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(106, 11);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(68, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "ID Distributor";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(89, 47);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Nama Distributor";
+            // 
+            // tb_dist_id
+            // 
+            this.tb_dist_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_dist_id.Location = new System.Drawing.Point(196, 8);
+            this.tb_dist_id.Name = "tb_dist_id";
+            this.tb_dist_id.Size = new System.Drawing.Size(333, 20);
+            this.tb_dist_id.TabIndex = 7;
+            // 
+            // tb_dist_nama
+            // 
+            this.tb_dist_nama.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_dist_nama.Location = new System.Drawing.Point(196, 44);
+            this.tb_dist_nama.Name = "tb_dist_nama";
+            this.tb_dist_nama.Size = new System.Drawing.Size(333, 20);
+            this.tb_dist_nama.TabIndex = 8;
+            // 
+            // tabBarang
+            // 
+            this.tabBarang.Controls.Add(this.tableLayoutPanel5);
+            this.tabBarang.Location = new System.Drawing.Point(4, 22);
+            this.tabBarang.Name = "tabBarang";
+            this.tabBarang.Size = new System.Drawing.Size(544, 468);
+            this.tabBarang.TabIndex = 3;
+            this.tabBarang.Text = "Barang";
+            this.tabBarang.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.195489F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53384F));
+            this.tableLayoutPanel5.Controls.Add(this.label21, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label22, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label23, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.label24, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.label25, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.label26, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_id, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_nama, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_merk, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_harga, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_jumlah, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.tb_barang_rak, 2, 5);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 6;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(532, 218);
+            this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(119, 11);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(55, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "ID Barang";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(102, 47);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(72, 13);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "Nama Barang";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(106, 83);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(68, 13);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "Merk Barang";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(101, 119);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(73, 13);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "Harga Barang";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(97, 155);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(77, 13);
+            this.label25.TabIndex = 5;
+            this.label25.Text = "Jumlah Barang";
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(113, 192);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(61, 13);
+            this.label26.TabIndex = 6;
+            this.label26.Text = "Lokasi Rak";
+            // 
+            // tb_barang_id
+            // 
+            this.tb_barang_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_id.Location = new System.Drawing.Point(196, 8);
+            this.tb_barang_id.Name = "tb_barang_id";
+            this.tb_barang_id.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_id.TabIndex = 7;
+            // 
+            // tb_barang_nama
+            // 
+            this.tb_barang_nama.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_nama.Location = new System.Drawing.Point(196, 44);
+            this.tb_barang_nama.Name = "tb_barang_nama";
+            this.tb_barang_nama.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_nama.TabIndex = 8;
+            // 
+            // tb_barang_merk
+            // 
+            this.tb_barang_merk.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_merk.Location = new System.Drawing.Point(196, 80);
+            this.tb_barang_merk.Name = "tb_barang_merk";
+            this.tb_barang_merk.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_merk.TabIndex = 9;
+            // 
+            // tb_barang_harga
+            // 
+            this.tb_barang_harga.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_harga.Location = new System.Drawing.Point(196, 116);
+            this.tb_barang_harga.Name = "tb_barang_harga";
+            this.tb_barang_harga.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_harga.TabIndex = 10;
+            // 
+            // tb_barang_jumlah
+            // 
+            this.tb_barang_jumlah.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_jumlah.Location = new System.Drawing.Point(196, 152);
+            this.tb_barang_jumlah.Name = "tb_barang_jumlah";
+            this.tb_barang_jumlah.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_jumlah.TabIndex = 11;
+            // 
+            // tb_barang_rak
+            // 
+            this.tb_barang_rak.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_barang_rak.Location = new System.Drawing.Point(196, 189);
+            this.tb_barang_rak.Name = "tb_barang_rak";
+            this.tb_barang_rak.Size = new System.Drawing.Size(333, 20);
+            this.tb_barang_rak.TabIndex = 12;
+            // 
+            // tabBarangDistributor
+            // 
+            this.tabBarangDistributor.Controls.Add(this.tableLayoutPanel6);
+            this.tabBarangDistributor.Location = new System.Drawing.Point(4, 22);
+            this.tabBarangDistributor.Name = "tabBarangDistributor";
+            this.tabBarangDistributor.Size = new System.Drawing.Size(544, 468);
+            this.tabBarangDistributor.TabIndex = 4;
+            this.tabBarangDistributor.Text = "Barang Distributor";
+            this.tabBarangDistributor.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.195489F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53384F));
+            this.tableLayoutPanel6.Controls.Add(this.label27, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.tb_brgdist_id_dist, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tb_brgdist_id_brg, 2, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 6;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(532, 218);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(106, 11);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(68, 13);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "ID Distributor";
+            // 
+            // label28
+            // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(119, 47);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(55, 13);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "ID Barang";
+            // 
+            // tb_brgdist_id_dist
+            // 
+            this.tb_brgdist_id_dist.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_brgdist_id_dist.Location = new System.Drawing.Point(196, 8);
+            this.tb_brgdist_id_dist.Name = "tb_brgdist_id_dist";
+            this.tb_brgdist_id_dist.Size = new System.Drawing.Size(333, 20);
+            this.tb_brgdist_id_dist.TabIndex = 7;
+            // 
+            // tb_brgdist_id_brg
+            // 
+            this.tb_brgdist_id_brg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_brgdist_id_brg.Location = new System.Drawing.Point(196, 44);
+            this.tb_brgdist_id_brg.Name = "tb_brgdist_id_brg";
+            this.tb_brgdist_id_brg.Size = new System.Drawing.Size(333, 20);
+            this.tb_brgdist_id_brg.TabIndex = 8;
+            // 
+            // tabTokoMenjual
+            // 
+            this.tabTokoMenjual.Controls.Add(this.tableLayoutPanel7);
+            this.tabTokoMenjual.Location = new System.Drawing.Point(4, 22);
+            this.tabTokoMenjual.Name = "tabTokoMenjual";
+            this.tabTokoMenjual.Size = new System.Drawing.Size(544, 468);
+            this.tabTokoMenjual.TabIndex = 5;
+            this.tabTokoMenjual.Text = "Toko Menjual";
+            this.tabTokoMenjual.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.195489F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.53384F));
+            this.tableLayoutPanel7.Controls.Add(this.label33, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label34, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.tb_tkmjl_id_toko, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.tb_tkmjl_id_barang, 2, 1);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 6;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(532, 218);
+            this.tableLayoutPanel7.TabIndex = 1;
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(128, 11);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(46, 13);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "ID Toko";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(119, 47);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(55, 13);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "ID Barang";
+            // 
+            // tb_tkmjl_id_toko
+            // 
+            this.tb_tkmjl_id_toko.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_tkmjl_id_toko.Location = new System.Drawing.Point(196, 8);
+            this.tb_tkmjl_id_toko.Name = "tb_tkmjl_id_toko";
+            this.tb_tkmjl_id_toko.Size = new System.Drawing.Size(333, 20);
+            this.tb_tkmjl_id_toko.TabIndex = 7;
+            // 
+            // tb_tkmjl_id_barang
+            // 
+            this.tb_tkmjl_id_barang.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tb_tkmjl_id_barang.Location = new System.Drawing.Point(196, 44);
+            this.tb_tkmjl_id_barang.Name = "tb_tkmjl_id_barang";
+            this.tb_tkmjl_id_barang.Size = new System.Drawing.Size(333, 20);
+            this.tb_tkmjl_id_barang.TabIndex = 8;
             // 
             // tableLayoutPanel1
             // 
@@ -351,6 +817,13 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
             this.toolStripMenuItem1.Text = "View";
             // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.viewToolStripMenuItem.Text = "View...";
+            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -381,12 +854,23 @@
             this.lblStatus.Size = new System.Drawing.Size(39, 17);
             this.lblStatus.Text = "Ready";
             // 
-            // viewToolStripMenuItem
+            // label8
             // 
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.viewToolStripMenuItem.Text = "View...";
-            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(111, 47);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 13);
+            this.label8.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(128, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 1;
             // 
             // CRUDGeneral
             // 
@@ -406,6 +890,21 @@
             this.tabKaryawan.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tabToko.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.tabDistributor.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tabBarang.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tabBarangDistributor.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tabTokoMenjual.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -421,7 +920,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabKaryawan;
-        private System.Windows.Forms.TabPage tabToko;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnUpdate;
@@ -451,5 +949,45 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabToko;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tb_toko_id;
+        private System.Windows.Forms.TextBox tb_toko_nama;
+        private System.Windows.Forms.TabPage tabDistributor;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox tb_dist_id;
+        private System.Windows.Forms.TabPage tabBarang;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox tb_barang_id;
+        private System.Windows.Forms.TextBox tb_barang_nama;
+        private System.Windows.Forms.TextBox tb_barang_merk;
+        private System.Windows.Forms.TextBox tb_barang_harga;
+        private System.Windows.Forms.TextBox tb_barang_jumlah;
+        private System.Windows.Forms.TextBox tb_barang_rak;
+        private System.Windows.Forms.TabPage tabBarangDistributor;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox tb_brgdist_id_dist;
+        private System.Windows.Forms.TextBox tb_brgdist_id_brg;
+        private System.Windows.Forms.TabPage tabTokoMenjual;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox tb_tkmjl_id_toko;
+        private System.Windows.Forms.TextBox tb_tkmjl_id_barang;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tb_dist_nama;
     }
 }

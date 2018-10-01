@@ -12,8 +12,9 @@ namespace Project_PPK
 {
     public partial class CRUDGeneral : Form
     {
-
+        private delegate void TabAction();
         public Dictionary<TabPage, string> tab_table = new Dictionary<TabPage, string>();
+        private Dictionary<TabPage, TabAction> tab_action = new Dictionary<TabPage, TabAction>();
         public DataView view;
         System.Windows.Forms.FormClosingEventHandler form_close;
         public CRUDGeneral()
@@ -21,8 +22,25 @@ namespace Project_PPK
 
             InitializeComponent();
             buildQuery();
+            TabAction disableUpdate = new TabAction(() => {
+                btnUpdate.Enabled = false;
+            });
+            TabAction enabledUpdate = new TabAction(() => {
+                btnUpdate.Enabled = true;
+            });
             tab_table.Add(tabToko, "toko");
             tab_table.Add(tabKaryawan, "karyawan");
+            tab_table.Add(tabBarang, "barang");
+            tab_table.Add(tabDistributor, "distributor");
+            tab_table.Add(tabBarangDistributor, "distributor_barang");
+            tab_table.Add(tabTokoMenjual, "toko_menjual");
+
+            tab_action.Add(tabToko, enabledUpdate);
+            tab_action.Add(tabKaryawan, enabledUpdate);
+            tab_action.Add(tabBarang, enabledUpdate);
+            tab_action.Add(tabDistributor, enabledUpdate);
+            tab_action.Add(tabBarangDistributor, disableUpdate);
+            tab_action.Add(tabTokoMenjual, disableUpdate);
             view = new DataView();
             view.crud = this;
  //           view.MdiParent = this;
@@ -30,6 +48,8 @@ namespace Project_PPK
             form_close = new System.Windows.Forms.FormClosingEventHandler(this.exit);
             this.FormClosing += form_close;
             read(null, null);
+            
+
 
         }
 
@@ -55,6 +75,7 @@ namespace Project_PPK
                 {
                     throw new Exception();
                 }
+                tab_action[tabControl1.SelectedTab]();
                 DbInterface.open();
                 lblStatus.Text = "Begin Query";
                 string tab = tab_table[tabControl1.SelectedTab];
@@ -84,6 +105,8 @@ namespace Project_PPK
                 DbInterface.close();
             }
             catch (Exception ex) {
+                DbInterface.close();
+
                 lblStatus.Text = "Query Failed";
             }
 
@@ -175,7 +198,7 @@ namespace Project_PPK
             }
         }
 
-        public void updateData(Dictionary<string, string> data) {
+          public void updateData(Dictionary<string, string> data) {
             string table = tab_table[tabControl1.SelectedTab];
             foreach (KeyValuePair<string, string> entry in data) {
                 UPDATE.args_box[table]["@" + entry.Key].Text = entry.Value;
@@ -211,6 +234,76 @@ namespace Project_PPK
             else {
                 lblStatus.Text = "View already created";
             }
+        }
+
+        private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox30_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox29_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox28_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

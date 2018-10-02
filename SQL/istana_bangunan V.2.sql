@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 01 Okt 2018 pada 16.51
--- Versi Server: 10.1.30-MariaDB
--- PHP Version: 7.2.1
+-- Generation Time: 02 Okt 2018 pada 06.51
+-- Versi Server: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,13 +21,14 @@ SET time_zone = "+00:00";
 --
 -- Database: `istana_bangunan`
 --
-CREATE DATABASE `istana_bangunan`;
-USE `istana_bangunan`;
+
 -- --------------------------------------------------------
 
 --
 -- Struktur dari tabel `barang`
 --
+CREATE DATABASE `istana_bangunan`;
+USE `istana_bangunan`;
 
 CREATE TABLE `barang` (
   `id_barang` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
@@ -97,13 +98,6 @@ CREATE TABLE `karyawan` (
   `cabang_tempat_bekerja` varchar(20) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data untuk tabel `karyawan`
---
-
-INSERT INTO `karyawan` (`id_karyawan`, `nama_karyawan`, `jenis_kelamin`, `gaji_karyawan`, `lama_bekerja`, `cabang_tempat_bekerja`) VALUES
-('id1', 'dasd', 'laki-laki', 124, 32, 'toko1');
-
 -- --------------------------------------------------------
 
 --
@@ -139,6 +133,25 @@ CREATE TABLE `toko_menjual` (
 
 INSERT INTO `toko_menjual` (`id_toko`, `id_barang`) VALUES
 ('toko1', 'bar2');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user`
+--
+
+CREATE TABLE `user` (
+  `id` varchar(20) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+('d123', 'yusril', '1234');
 
 --
 -- Indexes for dumped tables
@@ -183,6 +196,12 @@ ALTER TABLE `toko_menjual`
   ADD PRIMARY KEY (`id_toko`),
   ADD KEY `toko_menjual_fk1` (`id_toko`),
   ADD KEY `toko_menjual_fk2` (`id_barang`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

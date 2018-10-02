@@ -22,8 +22,8 @@ namespace Project_PPK
             Application.SetCompatibleTextRenderingDefault(false);
             do
             {
-               // Application.Run(new Login());
-              //  if (isAllowedLogin)
+                Application.Run(new Login());
+                if (isAllowedLogin)
                     Application.Run(new CRUDGeneral());
             } while (use);
         }
@@ -33,7 +33,7 @@ namespace Project_PPK
             Dictionary<string, string> args = new Dictionary<string, string>();
             args.Add("@uname", uname);
             args.Add("@pass", pass);
-            string[][] count = DbInterface.returnQuery(" SELECT * FROM admin WHERE id_admin = @uname AND hashed_pass = @pass ", args);
+            string[][] count = DbInterface.returnQuery(" SELECT * FROM user WHERE username = @uname AND password = @pass ", args);
             if (count.Length > 0)
             {
                 isAllowedLogin = true;

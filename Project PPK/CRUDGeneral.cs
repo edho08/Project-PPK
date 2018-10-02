@@ -17,6 +17,7 @@ namespace Project_PPK
         private Dictionary<TabPage, TabAction> tab_action = new Dictionary<TabPage, TabAction>();
         public DataView view;
         System.Windows.Forms.FormClosingEventHandler form_close;
+
         public CRUDGeneral()
         {
 
@@ -302,6 +303,11 @@ namespace Project_PPK
         }
 
         private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CRUDGeneral_Load(object sender, EventArgs e)
         {
 
         }
